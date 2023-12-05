@@ -1,0 +1,260 @@
+
+:root {
+    --color-detail-yellow: #FCC45C;
+    --color-hover-yellow: #FFE6B8;
+    --color-press-yellow: #FFA600;
+    --color-background: #1D1D1D;
+    --color-background-detail: #100F0A;
+    --color-text-white: #FFFFFF;
+    --color-text-gray: #F1F0F0;
+    --color-text-darkgray: #ACACAC;
+}
+
+  /*******************/
+  /*    sectie 1     */
+  /*******************/
+
+section:nth-of-type(1) {
+    background-color: var(--color_background);
+    display: grid;
+    justify-content: center;
+    gap: 0em;
+    height: 80vh;
+}
+
+section:nth-of-type(1) video {
+    z-index: 0;
+    position: absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: .5;
+}
+
+video {
+    object-fit: contain;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+
+
+section:nth-of-type(1) button {
+    position: relative;
+    display: grid;
+    z-index: 50;
+    width: 6%;
+    height: 2em;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    left: 47%;
+    right: 47%;
+}
+
+
+section:nth-of-type(1) h1 {
+    position: relative;
+    display: grid;
+    grid-row-start: 2;
+    z-index: 50;
+    justify-content: center;
+    font-size: 11vw;
+    align-self: flex-start;
+    color: var(--color-text-white);
+}
+
+section:nth-of-type(1) h2 {
+    position: relative;
+    display: grid;
+    grid-row-start: 1;
+    font-size: 3vw;
+    z-index: 50;
+    justify-content: center;
+    align-self: flex-end;
+    color: var(--color-detail-yellow);
+}
+
+
+
+  /*******************/
+  /*    sectie 2     */
+  /*******************/
+
+section:nth-of-type(2) {
+    background-color: var(--color-background-detail);
+    position: relative;
+    display: grid;
+    z-index: 50;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    height: auto;
+    grid-template-columns: 1fr 45% 45% 1fr;
+    grid-template-rows: 5.6vw 10.3vw 1fr;
+    gap: 2em;
+    border-radius: 20px 20px 20px 20px;
+    grid-auto-flow: column;
+}
+
+section:nth-of-type(2) img{
+width: 40vw;
+height: auto;
+grid-column-start: 2;
+grid-row: 1/3;
+border-radius: 15px 15px 15px 15px;
+}    
+
+section:nth-of-type(2) h2{
+    font-size: 3.2vw;
+    max-width: 10em;
+    grid-column-start: 3;
+
+
+    /* text-align: center; */
+}
+
+section:nth-of-type(2) p{
+    font-size: 1.8vw;
+    grid-column-start: 3;
+
+}
+
+section:nth-of-type(2) a{
+background-color: var(--color-detail-yellow);
+grid-column-start: 3;
+padding-top: 0.5em;
+padding-bottom: 0.5em;
+padding-left: 1.5em;
+padding-right: 1.5em;
+border-radius: 12px;
+align-self: self-start;
+
+}
+
+  /*******************/
+  /*    sectie 3     */
+  /*******************/
+
+  section:nth-of-type(3)  {
+    position: absolute;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+}
+
+section:nth-of-type(3) img{
+    position: absolute;
+    object-fit: cover;
+    top: -0.5em;
+    z-index: 0;
+    width: 120%;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+section:nth-of-type(3) h2 {
+    position: relative;
+    z-index: 50;
+    text-align: center;
+    font-size: 10vw;
+    padding-top: 0.4em;
+}
+
+section:nth-of-type(3) p {
+    position: relative;
+    z-index: 50;
+    text-align: center;
+    font-size: 4vw;
+    padding-top: 0.5em;
+    padding-left: 3.4em;
+    padding-right: 3.4em;
+    padding-bottom: .5em;
+}
+
+  /*********************/
+  /*    phone size     */
+  /*********************/
+
+@media screen and (max-width: 960px){
+
+  /*************************/
+  /*    sectie 1 phone     */
+  /*************************/
+
+    section:nth-of-type(1) button {
+        position: relative;
+        display: grid;
+        z-index: 50;
+        width: 10%;
+        height: auto;
+        justify-content: center;
+        left: 45%;
+        right: 45%;
+    }
+
+    section:nth-of-type(1) h1{
+        font-size: 3em;
+    }
+
+    section:nth-of-type(1) h2{
+        font-size: 1.6em;
+    }
+
+  /*************************/
+  /*    sectie 2 phone     */
+  /*************************/
+
+    section:nth-of-type(2) {
+        background-color: var(--color-background-detail);
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 80% 1fr;
+        grid-template-rows: auto;
+        height: auto;
+        gap: 1em;
+        border-radius: 15px 15px 15px 15px;
+        padding-top: 0em;
+    }
+
+    section:nth-of-type(2) h2{
+        font-size: 2.2em;
+        grid-column-start: 2;
+        max-width: 15em;
+        padding-top: 1em;
+        padding-bottom: 0.2em;
+        /* text-align: center; */
+    }
+
+    section:nth-of-type(2) p{
+        font-size: 1.2em;
+        grid-column-start: 2;
+        
+    }
+
+    section:nth-of-type(2) img{
+        width: 80vw;
+        height: auto;
+        grid-column-start: 2;
+        grid-row: 5;
+       
+    }
+
+    section:nth-of-type(2) a{
+        grid-column-start: 2;
+    }
+
+    section:nth-of-type(3) h2{
+        font-size: 2.4em;
+    }
+
+    section:nth-of-type(3) p{
+        padding-left: 2em;
+        padding-right: 2em;
+        font-size: 1.2em;
+    }
+    
+}

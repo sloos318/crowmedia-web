@@ -1,0 +1,313 @@
+*, *::after, *::before {
+    box-sizing:border-box;  
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* 333333333333333333333 */
+  /* Colors of the website */
+  /* 333333333333333333333 */
+
+:root {
+    --color-detail-yellow: #FCC45C;
+    --color-hover-yellow: #FFE6B8;
+    --color-press-yellow: #FFA600;
+    --color-background: #1D1D1D;
+    --color-background-detail: #100F0A;
+    --color-text-white: #FFFFFF;
+    --color-text-gray: #F1F0F0;
+    --color-text-darkgray: #ACACAC;
+}
+
+
+.visually-hidden {
+  position: absolute;
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0,0,0,0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+} 
+
+  /* 333333333333333 */
+  /* regulair stuff  */
+  /* 333333333333333 */
+
+  ul{
+    list-style: none;
+
+  }
+
+  a{
+    color: var(--color-text-white);
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.4em;
+    font-family: "barlow";
+    padding-bottom: .1em;
+    justify-self: left;
+  }
+
+  
+h2{
+  color: var(--color-text-white);
+}
+
+h3{
+  color: var(--color-text-white);
+}
+
+p{
+  color: var(--color-text-white);
+}
+
+
+  /*****************/
+  /*    Header     */
+  /*****************/
+
+  header {
+    position: relative;
+    display: grid;
+    grid-template-columns: 3.5fr 63% .2fr ;
+    z-index: 100;
+  }
+
+  header button:nth-of-type(1){
+    display: none;
+  }
+
+  header{
+    padding: 1em;
+    padding-top: 2em;
+    padding-left: 2em;
+  }
+
+  header nav{
+    display: grid;
+
+  }
+
+  header nav ul{
+    display: flex;
+    justify-content: space-around;
+    
+  }
+
+
+  header nav ul li:nth-of-type(4){
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--color-detail-yellow);
+    padding-top: .5em;
+    padding-bottom: .5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    justify-content: right;
+    align-content: center;
+    border-radius: 12px;
+
+  }
+
+  nav ul li {
+    align-self: center;
+    justify-content: left;
+  }
+
+  header img:nth-of-type(2){
+    width: 15em;
+    height: auto;
+    grid-row-start: 1;
+    justify-self: left;
+    
+  }
+
+  header img:nth-of-type(1){
+    display: none;
+    
+  }
+
+
+  @media screen and (min-width: 1300px){
+    header {
+      display: grid;
+      grid-template-columns: 5fr 50%  ;
+      padding: 1em;
+      padding-top: 2em;
+      padding-left: 2em;
+    }
+
+    a{
+      font-size: 2em;
+    }
+
+    header li {
+      padding-right: 1.5em;
+    }
+
+    header img:nth-of-type(2){
+      width: 23em;
+      height: auto;
+      grid-row-start: 1;
+      justify-self: left;
+      
+    }
+    
+  }
+  
+  
+  /**********************/
+  /*    Header phone    */
+  /**********************/
+
+  @media screen and (max-width: 960px){
+    header {
+      display: grid;
+      grid-template-columns: 1fr 80% 1fr;
+      padding: 2em;
+    }
+  
+    header button:nth-of-type(1){
+      background-color: transparent;
+      border:none;
+      grid-column-start: 3;
+      width: 2em;
+      height: auto;
+      justify-self: right;
+      display: block;
+      
+    }
+
+    header nav ul{
+      display: grid;
+      grid-column-start: 2;
+      align-items: center;
+
+    }
+
+    header nav ul li{
+      padding-top: 0.5em;
+      padding-bottom: 1.5em;
+      padding-left: 1.5em;
+      padding-right: 1.5em;
+      text-align: center;
+    }
+
+    header img:nth-of-type(1){
+      display: block;
+      width: 2em;
+      height: auto;
+      grid-row-start: 1;
+      justify-self: left;
+      grid-column-start: 1;
+    }
+
+    header img:nth-of-type(2){
+      display: none;
+      
+    }
+
+    header nav ul li:nth-of-type(4){
+      display: block;
+      background-color: var(--color-background-detail);
+
+    }
+  
+  
+  /****************/
+  /*   Navigatie  */
+  /****************/
+  nav button {
+    justify-self:start;
+   }
+  
+   nav{
+    position: relative;
+    display: grid;
+    z-index: 200;
+    display:grid;
+    align-content:start;
+    background-color: var(--color-background-detail); 
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 10%;
+    right: 0;
+    translate: 120% 0;
+    border-radius: 15px 0 0 15px;
+    padding: 2em;
+  }
+  /* hier zorg ik dat de nav niet te zien is voordat er op het hamburger menu word geklikt */
+
+  
+  nav button {
+    background-color:var(--color-background);
+    border:none;
+    grid-column-start: 3;
+    height: auto;
+    justify-self: right;
+    
+  }
+
+  nav button img {
+    width: 1.8em;
+    height: auto;
+    
+  }
+
+  header nav button:nth-of-type(1){
+    color: var(--color-text-white);
+    width: 1.8em;
+    height: auto;
+    display: block;
+  }
+
+  nav ul {
+    display: grid;
+    padding-top: 1.5em;
+
+  }
+
+  nav li {
+    padding-bottom: 1em;
+  }
+
+  nav a {
+    font-size: 7vw;
+  }
+
+
+  /* hier zorg ik dat de nav niet te zien is voordat er op het hamburger menu word geklikt */
+  
+  nav.open {
+    
+    top: 0;
+    bottom: 0;
+    right: 0;
+    /* right: -1em; */
+    
+    translate: 0 0;
+    
+    transition: .3s;
+  }
+  /* hier zorg ik dat als mijn java geactiveerd word dat mijn nav op de goede positie komt */
+  
+  
+  
+  /* hierna doe ik de styling van de interne nav */
+ 
+  /****************/
+  /*   Navigatie  */
+  /****************/
+}
+
+body{
+    background-color: var(--color-background);
+}
