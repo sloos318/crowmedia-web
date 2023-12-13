@@ -3,17 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diensten</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500&family=Dosis:wght@500&display=swap" rel="stylesheet">
+    
+    <link href="./style/stylesheet.css" rel="stylesheet">
+    <link href="./style/Dienstpagina_style.css" rel="homepage stylesheet">
+    <title>Crowmedia</title>
 </head>
 <body>
     <header>
         
+
+  <!-- ********************************************* -->
+  <!--  These are the buttons for the hamburger menu -->
+  <!-- ********************************************* -->
+    <button aria-hidden="true">
+       <img src="./images/hamburgermenu.png" alt="">
+    </button>
+    
+<!-- ********************************************* -->
+<!--  These are the buttons for the hamburger menu -->
+<!-- ********************************************* -->
+
+<!-- ********************************* -->
+<!--  This is the first hamburger menu -->
+<!-- ********************************* -->
+    <nav>
+
+      <button aria-hidden="true">
+        <img src="./images/cross.png" alt="">
+    </button>
+      
+      
+
+      <ul>
+        <li>
+            <a href="" aria-label="">
+                Home
+            </a>
+        </li>
+        <li>
+            <a href="" aria-label="">
+                Services
+            </a>
+        </li>
+        <li>
+            <a href="" aria-label="">
+                Portfolio
+            </a>
+        </li>
+        <li>
+            <a href="" aria-label="H">
+                contact
+            </a>
+        </li>
+    </ul>
+    </nav>
+<!-- ********************************* -->
+<!--  This is the first hamburger menu -->
+<!-- ********************************* -->
+ 
+    <img src="./images/crowicon.png" alt="">
+    <img src="./images/crowlogo.png" alt="">
+
     </header>
+
     <main>
+
+        <section>
+
+            <h1>
+                Onze diensten   
+            </h1>
+
+            <div class="video-player">
+                <video muted loop class="video">
+                    <source src="./images/Sequence 01.mp4" type="video/webm">
+                </video>
+            <div class="player-controls">
+                <button class="play-button" title="play">▷</button>
+            </div>
+            </div>
+            
+        </section>
+
+        <section>
+            <h2>
+                <span></span>Huur ons in
+            </h2>
+
+            <p>
+                Huur ons in om samen met jou je filmproductie van de grond te krijgen. Heb je meer vragen hoe we jou kunnen helpen. Neem dan contact met ons op.
+            </p>
+
+            <img src="./images/WhatsApp Image 2023-09-05 at 13.33.15_f6962e82.jpg" alt="">
+
+
+                <h3>Neem contact op</h3>
+
+            <form id="contactform" action="https://formsubmit.io/send/sybren@crowpictures.nl" method="POST">
+                <input name="name" type="text" id="name">
+                <input name="email" type="email" id="email">
+                <textarea name="comment" id="comment" rows="3"></textarea>
+                
+                <input name="_formsubmit_id" type="text" style="display:none">
+                
+                <input value="Submit" type="submit">
+            </form>
+
+        </section>
 
     </main>
     <footer>
-        
     </footer>
+    <script src="./scripts/script.js"></script>
 </body>
 </html>

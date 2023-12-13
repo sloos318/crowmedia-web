@@ -1,0 +1,71 @@
+:root {
+    --color-detail-yellow: #FCC45C;
+    --color-hover-yellow: #FFE6B8;
+    --color-press-yellow: #FFA600;
+    --color-background: #1D1D1D;
+    --color-background-detail: #100F0A;
+    --color-text-white: #FFFFFF;
+    --color-text-gray: #F1F0F0;
+    --color-text-darkgray: #ACACAC;
+}
+
+  /*******************/
+  /*    sectie 1     */
+  /*******************/
+
+section:nth-of-type(1) {
+    background-color: var(--color_background);
+    display: grid;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    gap: 0em;
+    width: 100%;
+    height: 70vh;
+}
+
+section:nth-of-type(1) video {
+    z-index: 0;
+    position: absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: .5;
+}
+
+video {
+    object-fit: contain;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+
+
+section:nth-of-type(1) button {
+    position: relative;
+    display: grid;
+    z-index: 50;
+    width: 2em;
+    height: 2em;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    left: 47%;
+    right: 47%;
+    margin-top: 1em;
+}
+
+
+section:nth-of-type(1) h1 {
+    position: relative;
+    display: grid;
+    grid-row-start: 1;
+    z-index: 50;
+    justify-content: center;
+    font-size: 10vw;
+    align-self: flex-end;
+    color: var(--color-text-white);
+}
