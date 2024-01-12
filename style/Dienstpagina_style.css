@@ -17,7 +17,6 @@ section:nth-of-type(1) {
     background-color: var(--color_background);
     display: grid;
     justify-content: center;
-    position: absolute;
     top: 0;
     gap: 0em;
     width: 100%;
@@ -69,3 +68,263 @@ section:nth-of-type(1) h1 {
     align-self: flex-end;
     color: var(--color-text-white);
 }
+
+/* ________ */
+/* sectie 2 */
+/* ________ */
+
+section:nth-of-type(2) {
+    background-color: var(--color-background-detail);
+    position: relative;
+    display: grid;
+    z-index: 50;
+    padding-top: 3em;
+    padding-bottom: .5em;
+    height: auto;
+    grid-template-columns: 1fr 45% 35% 1fr;
+    grid-template-rows: 3.5vw 8vw 29vw;
+    gap: 1.5em;
+    border-radius: 20px 20px 20px 20px;
+    grid-auto-flow: column;
+    row-gap: 0em;
+}
+
+section:nth-of-type(2) img{
+    width: 32vw;
+    height: auto;
+    grid-column-start: 2;
+    grid-row-start: 3;
+    margin-left: 3em;
+    border-radius: 15px 15px 15px 15px;
+    }    
+    
+    section:nth-of-type(2) h2{
+        font-size: 3.2vw;
+        max-width: 10em;
+        grid-column-start: 2;
+        display: flex;
+        flex-wrap: nowrap;
+        grid-row: 1;
+        gap: .3em;
+        /* align-items: center; */
+        
+        /* text-align: center; */
+    }
+    
+    section:nth-of-type(2) p{
+        font-size: 1.8vw;
+        grid-row: 	2;
+        grid-column-start: 2;
+        padding-left: 2.5em;
+    }
+
+    section:nth-of-type(2) span {
+        margin-top: .5em;
+        display: flex;
+        flex-wrap: nowrap;
+        border-radius: 1em;
+        width: 1.1em;
+        height: .3em;
+        background-color: var(--color-detail-yellow);
+    }
+
+    .formulier {
+        
+        grid-column-start: 3;
+        grid-row: 1/4;
+        background-color: var(--color-background);
+        border-radius: 2em;
+        height: 30em;
+        
+    }
+
+    form {
+        grid-column: 2;
+        display: grid;
+        grid-template-columns: 1fr 6fr 1fr;
+        justify-content: center;
+        margin-left: 1em;
+        margin-right: 1em;
+        border-radius: 15px 15px 15px 15px;
+        grid-template-rows: 4em;
+        justify-content: center;
+    }
+
+    .formulier h3 {
+        display: grid;
+        grid-column: 2;
+        font-size: 2.8vw;
+        margin-top: .6em;
+        margin-bottom: .5em;
+        text-align: center;
+    }
+
+    .formulier input {
+        display: grid;
+        grid-column: 2;
+        width: 100%;
+        margin-bottom: 1.8em;
+        border-radius: 20px;
+        height: 3.2em;
+        padding: 1em;
+    }
+
+    .formulier textarea {
+        width: 100%;
+        border-radius: 20px;
+        margin-bottom: 1.8em;
+        padding: 1em;
+        grid-column-start: 2;
+    }
+
+    .formulier input:last-of-type {
+        background-color: var(--color-detail-yellow);
+        align-self: center;
+        width: 10em;
+        height: 3.5em;
+        grid-column-start: 3;
+        border-radius: 12px;
+        align-self: self-start;
+        grid-column-start: 2;
+        justify-self: center;
+    }
+
+/* ________ */
+/* sectie 2 */
+/* ________ */
+
+    section:nth-of-type(3){
+        display: grid;
+        grid-template-columns: 1fr 90% 1fr;
+        grid-template-rows: 1.2fr 1fr;
+        padding-top: 3em;
+        padding-bottom: 0.5em;
+    }
+
+    section:nth-of-type(3) h2{
+        font-size: 3.2vw;
+        grid-row: 1;
+        display: flex;
+        grid-column: 2;
+        margin-bottom: .6em;
+    }
+
+    section:nth-of-type(3) span {
+        margin-top: .5em;
+        grid-row: 1;
+        display: flex;
+        flex-wrap: nowrap;
+        border-radius: 1em;
+        width: 1.1em;
+        height: .3em;
+        background-color: var(--color-detail-yellow);
+    }
+
+    section:nth-of-type(3) ol {
+        grid-column: 2;
+        grid-row: 1;
+        margin-top: 4em;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 4em;
+        list-style: none;
+    }
+
+    section:nth-of-type(3) ol li{
+        display: grid;
+        grid-template-rows: 2em 2.5em 4em 4em;
+        row-gap: 0;
+    }
+
+    section:nth-of-type(3) ol h3{
+        font-size: 2em;
+    }
+
+    section:nth-of-type(3) ol p{
+        margin-top: .5em;
+        font-size: 1.15em;
+        max-width: 17em;
+    }
+
+    section:nth-of-type(3) ol h3:first-of-type{
+        color: var(--color-press-yellow);
+
+    }
+
+    section:nth-of-type(3) ol a{
+        grid-row-start: 4;
+        background-color: var(--color-detail-yellow);
+        font-size: 1.2em;
+        padding: .6em;
+        color: var(--color-background-detail);
+        border-radius: 12px;
+        align-self: self-start;
+        margin-top: 1.2em;
+    }
+
+    section:nth-of-type(3) img {
+        justify-self: center;
+        grid-row: 2;
+        width: 80vw;
+        grid-column: 2;
+        border-radius: 2em;
+    }
+
+    @media screen and (max-width: 960px){
+        
+        /* ________ */
+        /* sectie 2 */
+        /* ________ */
+
+        section:nth-of-type(2) {
+            display: grid;
+            grid-template-columns: 1fr 85vw 1fr;
+            grid-template-rows: 9em 1fr;
+            gap: .5em;
+        }
+        section:nth-of-type(2) h2 {
+            font-size: 6.5vw;
+        }
+
+        section:nth-of-type(2) p {
+            grid-row: 1;
+            font-size: 4.5vw;
+            margin-top: 2.4em;
+            padding-left: 0em;
+        }
+        
+        section:nth-of-type(2) img {
+            display: none;
+        }
+
+        .formulier {
+        
+            grid-column-start: 2;
+            grid-row: 2;
+            background-color: var(--color-background);
+            border-radius: 2em;
+            height: 29em;
+            
+        }
+
+        form {
+            grid-column: 2;
+            display: grid;
+            grid-template-columns: 1fr 12fr 1fr;
+            justify-content: center;
+            margin-left: 1em;
+            margin-right: 1em;
+            border-radius: 15px 15px 15px 15px;
+            grid-template-rows: 4em;
+            justify-content: center;
+        }
+
+        .formulier h3 {
+            display: grid;
+            grid-column: 2;
+            font-size: 7vw;
+            margin-top: .8em;
+            margin-bottom: .7em;
+            text-align: center;
+        }
+    }
